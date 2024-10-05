@@ -1,0 +1,20 @@
+Staircase detail
+
+This is a staircase of size :
+
+   #
+  ##
+ ###
+####
+Its base and height are both equal to . It is drawn using # symbols and spaces. The last line is not preceded by any spaces.
+
+Write a program that prints a staircase of size .
+
+
+
+def staircase(n):
+    for i in range(n):
+        print(" " * (n - i - 1), end="")
+        print("*" * (i + 1))
+
+staircase(4)
